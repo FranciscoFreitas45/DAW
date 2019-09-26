@@ -16,7 +16,7 @@
             NOME CDATA #REQUIRED>
 
 <!ELEMENT DESCRI (#PCDATA|LIGA)* >
-<!ELEMENT descri (#PCDATA) >
+
 
 <!ELEMENT CRONO (#PCDATA) >
 
