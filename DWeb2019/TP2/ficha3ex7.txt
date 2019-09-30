@@ -1,9 +1,0 @@
-	- Qual o "IDENTI" dos arqueossítios do concelho de Amares.
-		//ARQELEM[normalize-space(CONCEL)="Amares"]/IDENT
-	
-	- Quais os concelhos com arqueossítios registados.
-		distinct-values(//CONCEL)
-
-	- Seleccione as descrições dos arqueossítios do concelho de Montalegre.
-		//ARQELEM[normalize-space(CONCEL) = "Montalegre"]/DESCRI
-	
