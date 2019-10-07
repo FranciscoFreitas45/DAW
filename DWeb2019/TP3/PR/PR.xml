@@ -2,12 +2,11 @@
 <!DOCTYPE pr SYSTEM "pr.dtd">
 <pr>
     <metadata>
-        <keyname>TPC2</keyname>
-        <title>Processamento de Arqueossítios</title>
-        <subtitle>Aprofundamento de conhecimentos sobre XML,DTD e XPath</subtitle>
+        <keyname>TPC3</keyname>
+        <title>Transformações XLST</title>
         <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho </supervisor>
-        <bdate>24/09/2019</bdate>
-        <edate>01/10/2019</edate>
+        <bdate>01/10/2019</bdate>
+        <edate>08/10/2019</edate>
        
     </metadata>
     <workteam>
@@ -21,19 +20,15 @@
     </workteam>
     <abstract>
         <p>Este trabalho foi dividio em 2 partes. </p>
-        <p>A 1ª parte consistia na criação de um <b>DTD<i>(Document Type Definition)</i></b>com base no seguinte 
-            <xref url="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">documento</xref>
-        </p>
-        <p>A 2ª parte consistia na resolução de 2 exercicios da  <xref url="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/">ficha 3 </xref> <i>(Exercicios 6 e 7)</i>.</p>
-        <p>O exercicio 6 consistia em escrever espressões XPath para o seguinte 
-            <xref url="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq.xml">documento XML</xref>
-            e o exercicio 7 na resolucão de DTD para o mesmo documento.
-        </p>
+        <p>A 1ª parte consistia na criação de um XSL(eXtensible Stylesheet Language) para transformar o pr.xml numa página html</p>
+        <p>Já a 2ª parte baseou-se no desenvolvimento de um website para os arqueossitios e para esse efeito foi criada uma XSL.Com essa stylesheet foram geradas várias páginas html e um indíce.</p> 
     </abstract>
     <deliverables>
-        <deliverable path="https://github.com/FranciscoFreitas45/DAW/blob/master/DWeb2019/TP2/PR.dtd">PR(DTD) </deliverable>
-        <deliverable path="https://github.com/FranciscoFreitas45/DAW/blob/master/DWeb2019/TP2/PR.xml">PR(XML)</deliverable>
-        <deliverable path="https://github.com/FranciscoFreitas45/DAW/blob/master/DWeb2019/TP2/ficha3ex6.txt">Arqueossítios(XPath)</deliverable>
-        <deliverable path="https://github.com/FranciscoFreitas45/DAW/blob/master/DWeb2019/TP2/ARQSITS.dtd">Arqueossítios(DTD)</deliverable>
+        <deliverable path="PR.xsl">PR(XSL) </deliverable>
+        <deliverable path="PR.xml">PR(XML)</deliverable>
+        <deliverable path="PR.html">PR(HTML)</deliverable>
+        <deliverable path="PR.dtd">PR(DTD)</deliverable>
+        <deliverable path="../Arqueossitios.xsl">Arqueossítios(XSL)</deliverable>
+        <deliverable path="../website">Website dos Arqueossítios</deliverable>
     </deliverables>
 </pr>

@@ -38,9 +38,13 @@
             </tr>
             
             <tr>
+                <xsl:choose>
+                    <xsl:when test="subtitle">
                 <td width="50%">
                     <b>SUBTITLE</b> <font color="#000080"> <xsl:value-of select="subtitle"/></font>
                 </td>
+                        </xsl:when>
+                </xsl:choose>
                 <td width="50%">
                     <b>SUPERVISOR:</b><font color="#000080"><a href="{supervisor/@homepage}"><xsl:value-of select="supervisor"/></a> </font>
                 </td>   
@@ -124,6 +128,7 @@
     <xsl:template match="deliverables">
         <h3>Deliverables</h3>
         <ul><xsl:apply-templates select="deliverable"/></ul>
+        <hr/>
     </xsl:template>
     
     <xsl:template match="deliverable">
