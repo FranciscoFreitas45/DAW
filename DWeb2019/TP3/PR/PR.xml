@@ -19,9 +19,10 @@
         
     </workteam>
     <abstract>
-        <p>Este trabalho foi dividio em 2 partes. </p>
-        <p>A 1ª parte consistia na criação de um XSL(eXtensible Stylesheet Language) para transformar o pr.xml numa página html</p>
-        <p>Já a 2ª parte baseou-se no desenvolvimento de um website para os arqueossitios e para esse efeito foi criada uma XSL.Com essa stylesheet foram geradas várias páginas html e um indíce.</p> 
+        <p> Este trabalho foi dividio em 2 partes. </p>
+        <p> A 1ª parte consistia na criação de uma XSL(eXtensible Stylesheet Language) para transformar o pr.xml numa página html.</p>
+        <p> Já a 2ª parte baseou-se no desenvolvimento de um website para os arqueossitios e para esse efeito foi criada uma XSL.</p>
+        <p>Com essa stylesheet foram geradas várias páginas html e um indíce.</p> 
     </abstract>
     <deliverables>
         <deliverable path="PR.xsl">PR(XSL) </deliverable>
