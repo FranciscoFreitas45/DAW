@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <metadata>
+        <keyname>TPC2</keyname>
+        <title>Processamento de Arqueossítios</title>
+        <subtitle>Aprofundamento de conhecimentos sobre XML,DTD e XPath</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho </supervisor>
+        <bdate>24/09/2019</bdate>
+        <edate>01/10/2019</edate>
+       
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81580</identifier>
+            <name>Francisco Freitas</name>
+            <email>zefreitas2011@hotmail.com</email>
+            <git>https://github.com/FranciscoFreitas45</git>
+        </worker>
+        
+    </workteam>
+    <abstract>
+        <p>Este trabalho foi dividio em 2 partes. </p>
+        <p>A 1ª parte consistia na criação de um <b>DTD<i>(Document Type Definition)</i></b>com base no seguinte 
+            <xref url="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">documento</xref>
+        </p>
+        <p>A 2ª parte consistia na resolução de 2 exercicios da  <xref url="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/">ficha 3 </xref> <i>(Exercicios 6 e 7)</i>.</p>
+        <p>O exercicio 6 consistia em escrever espressões XPath para o seguinte 
+            <xref url="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq.xml">documento XML</xref>
+            e o exercicio 7 na resolucão de DTD para o mesmo documento.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/FranciscoFreitas45/DAW/blob/master/DWeb2019/TP2/PR.dtd">PR(DTD) </deliverable>
+        <deliverable path="https://github.com/FranciscoFreitas45/DAW/blob/master/DWeb2019/TP2/PR.xml">PR(XML)</deliverable>
+        <deliverable path="https://github.com/FranciscoFreitas45/DAW/blob/master/DWeb2019/TP2/ficha3ex6.txt">Arqueossítios(XPath)</deliverable>
+        <deliverable path="https://github.com/FranciscoFreitas45/DAW/blob/master/DWeb2019/TP2/ARQSITS.dtd">Arqueossítios(DTD)</deliverable>
+    </deliverables>
+</pr>
