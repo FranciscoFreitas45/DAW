@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <metadata>
+        <keyname>TPC4</keyname>
+        <title>Servidor nodejs</title>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho </supervisor>
+        <bdate>08/10/2019</bdate>
+        <edate>15/10/2019</edate>
+       
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81580</identifier>
+            <name>Francisco Freitas</name>
+            <email>zefreitas2011@hotmail.com</email>
+            <git>https://github.com/FranciscoFreitas45</git>
+        </worker>
+        
+    </workteam>
+    <abstract>
+        <p> Este trabalho consiste na construção de um servidor para o website dos arqueossítios.  </p>
+        <p> Para esse efeito foi criada uma stylesheet que processa o ficheiro <xref  url="../arq.xml"> arq.xml</xref> e gera um ficheiro por cada arqueossitio.Estes ficheiros são guardados numa pasta.</p>
+        <p>Para além disso, foi gerado um índice organizado por concelhos.</p>
+        <p>A cada ficheiro XML foi associado uma stylesheet XSLT que o transforma para HTML</p>
+        <p>Por último, foi construido o servidor em nodejs que responde a pedidos na porta 7777 da seguinte forma:</p> 
+        <p>localhost:7777/3  --> Coloca no browser o conteúdo do arq3.xml em formato HTML</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xsl">PR(XSL) </deliverable>
+        <deliverable path="PR.xml">PR(XML)</deliverable>
+        <deliverable path="PR.html">PR(HTML)</deliverable>
+        <deliverable path="PR.dtd">PR(DTD)</deliverable>
+        <deliverable path="../index.xsl">stylesheet que processa o ficheiro arq.xml</deliverable>
+        <deliverable path="../server.js">Servidor</deliverable>
+        <deliverable path="../dataset"> Pasta com os ficheiros xml</deliverable>
+        <deliverable path="../dataset/arq2html.xsl"> stylesheet que transforma o xml em html</deliverable>
+    </deliverables>
+</pr>

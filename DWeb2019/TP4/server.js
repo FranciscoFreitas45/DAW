@@ -15,6 +15,7 @@ http.createServer(function (req,res){
     })
         break;
        case '':
+       case 'index.html':
         fs.readFile('dataset/index.html' ,function(err,data){
         res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
         res.write(data)

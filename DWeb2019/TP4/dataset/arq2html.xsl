@@ -162,6 +162,10 @@
                         
                     </table>
                     <hr/>
+                    <address>
+                        <a href="index.html">Voltar à página principal</a>
+                    </address>
+                    <hr/>
                 </body>
             </html>
            
