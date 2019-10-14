@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pr SYSTEM "pr.dtd">
+<!DOCTYPE pr SYSTEM "PR.dtd">
 <pr>
     <metadata>
         <keyname>TPC4</keyname>
@@ -31,9 +31,9 @@
         <deliverable path="PR.xml">PR(XML)</deliverable>
         <deliverable path="PR.html">PR(HTML)</deliverable>
         <deliverable path="PR.dtd">PR(DTD)</deliverable>
-        <deliverable path="../index.xsl">stylesheet que processa o ficheiro arq.xml</deliverable>
+        <deliverable path="../index.xsl">Stylesheet que processa o ficheiro arq.xml</deliverable>
         <deliverable path="../server.js">Servidor</deliverable>
-        <deliverable path="../dataset"> Pasta com os ficheiros xml</deliverable>
-        <deliverable path="../dataset/arq2html.xsl"> stylesheet que transforma o xml em html</deliverable>
+        <deliverable path="../dataset"> Pasta com os ficheiros XML</deliverable>
+        <deliverable path="../dataset/arq2html.xsl"> Stylesheet que transforma o XML em HTML</deliverable>
     </deliverables>
 </pr>
