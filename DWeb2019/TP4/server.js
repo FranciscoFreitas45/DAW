@@ -27,7 +27,7 @@ http.createServer(function (req,res){
     fs.readFile('dataset/arq'+ pag +'.xml',function(err,data){
         if(err){
             res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
-            res.write('Ficheiro iexistente :' + pag)
+            res.write('Ficheiro inexistente :' + pag)
             res.end()
         }
      else{   
