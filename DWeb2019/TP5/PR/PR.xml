@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "PR.dtd">
+<pr>
+    <metadata>
+        <keyname>TPC5</keyname>
+        <title>Servidor nodejs para Lista de Tarefas</title>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho </supervisor>
+        <bdate>15/10/2019</bdate>
+        <edate>22/10/2019</edate>
+       
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81580</identifier>
+            <name>Francisco Freitas</name>
+            <email>zefreitas2011@hotmail.com</email>
+            <git>https://github.com/FranciscoFreitas45</git>
+        </worker>
+        
+    </workteam>
+    <abstract>
+        <p> Este trabalho consiste na construção de um servidor capaz de responder a pedidos de GET e POST . </p>
+        <p> Para esse efeito foi construida uma pagina web capaz de submeter dados e de seguida apresentá-los numa tabela.</p>
+        <p>Os dados que são apresentados na lista estão armazenados num ficheiro json.</p>
+        <p> Para além disso o servidor é capaz detetar pedidos que não suporta dando como resposta uma página html de erro,evitando assim 
+        o erro 404.</p>
+        <p>As páginas HTML são geradas a partir de ficheiros pug.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xsl">PR(XSL) </deliverable>
+        <deliverable path="PR.xml">PR(XML)</deliverable>
+        <deliverable path="PR.html">PR(HTML)</deliverable>
+        <deliverable path="PR.dtd">PR(DTD)</deliverable>
+        <deliverable path="../index.pug">Template da pagina web inicial </deliverable>
+        <deliverable path="../erro.pug">Template da pagina web de erro </deliverable> 
+        <deliverable path="../tarefas.json">Base de dados </deliverable>
+        <deliverable path="../server.js">Servidor</deliverable>
+    </deliverables>
+</pr>
