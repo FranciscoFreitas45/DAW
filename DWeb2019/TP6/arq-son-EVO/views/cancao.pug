@@ -1,0 +1,31 @@
+extends layout
+block content
+  .w3-container
+    h1= cancao.tit
+    .w3-card-4
+        table.w3-table-all
+            tr   
+                th Provincia
+                td=cancao.prov
+            tr  
+                th Local
+                td=cancao.local
+            tr  
+                th Titulo
+                td=cancao.tit
+            tr  
+                th Musico
+                td= cancao.musico
+            tr  
+                th Extensao
+                td=cancao.file.t
+            tr  
+                th Duração
+                td= cancao.duracao
+    tr           
+    
+    a(href='/editar'+cancao.id) 
+        button Atualizar                
+    a(href='/') 
+        button Voltar para tras.
+                

@@ -1,0 +1,32 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container
+                h3= cancao.tit
+            .w3-container
+                form.w3-container(action='/editar'+cancao.id method='POST' )
+                    label
+                        b Provincia
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='prov' value = cancao.prov)
+                    label
+                        b Local
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='local' value = cancao.local)
+                    label
+                        b Titulo
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='tit' value = cancao.tit)
+                    label
+                        b Músico
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='musico' value = cancao.musico)
+                    label
+                        b Extensão
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='file' value = cancao.file.t)
+                    label
+                        b Duração
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='duracao' value = cancao.duracao)
+                    
+                    input.w3-btn-blue-grey(type="submit" value="Submeter")
+            .w3-container
+                .w3-container               
+                    a(href='/cancao'+cancao.id)
+                        button(align='right') Cancelar

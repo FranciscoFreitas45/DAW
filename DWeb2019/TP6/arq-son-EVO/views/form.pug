@@ -1,0 +1,31 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container
+                h3 Novo Canção
+            .w3-container
+                form.w3-container(action='/' method='POST' )
+                    label
+                        b Provincia
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='prov')
+                    label
+                        b Local
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='local')
+                    label
+                        b Titulo
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='tit')
+                    label
+                        b Músico
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='musico')
+                    label
+                        b Extensão
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='file')
+                    label
+                        b Duração
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='duracao')
+                    
+                    input.w3-btn-blue-grey(type="submit" value="Submeter")
+
+                    a(href='/')
+                        button Cancelar

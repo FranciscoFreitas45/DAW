@@ -1,0 +1,23 @@
+extends layout
+block content
+  .w3-container
+    h1 Lista de Musicas de EVO
+    form.w3-container(action='/adicionar' method='GET' )
+         input.w3-btn-blue-grey(type="submit" value="Criar musica")
+  .w3-card-4
+        table.w3-table-all
+                tr
+                    th Titulo
+                    th Musico
+                    th Operações
+                each a in lista
+                    tr
+                        td= a.tit
+                        td= a.musico
+                        td 
+                            button.w3-button.w3-circle.w3-blue-grey(onclick="apagaItem('" + a.id + "')") Apagar
+                            a(href='/cancao'+a.id)
+                                button.w3-button.w3-circle.w3-blue-grey Consultar
+  footer.w3-container.w3-teal
+            address Gerado por Lista de Compras App::
+                
