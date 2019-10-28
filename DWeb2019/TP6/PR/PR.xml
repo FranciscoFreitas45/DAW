@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "PR.dtd">
+<pr>
+    <metadata>
+        <keyname>TPC6</keyname>
+        <title>Servidor nodejs para Arquivo de Músicas</title>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho </supervisor>
+        <bdate>22/10/2019</bdate>
+        <edate>29/10/2019</edate>
+       
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81580</identifier>
+            <name>Francisco Freitas</name>
+            <email>zefreitas2011@hotmail.com</email>
+            <git>https://github.com/FranciscoFreitas45</git>
+        </worker>
+        
+    </workteam>
+    <abstract>
+        <p> Este trabalho consiste na construção de um servido rque permite utilizar as operações CRUD num arquivo sonoro </p>
+        <p> Para esse efeito foi criado um ficheiro JSON  <xref url="../arq-son-EVO/cancoes.json"> cancoes.json</xref> para ser o armazenamento do arquivo. </p>
+        <p> Para adicionar um id a cada música foi utilizado <b>nanoid</b> na função definida no ficheiro JS <xref url="../arq-son-EVO/adicionar.js"> adicionar.js</xref></p>
+        <p>As páginas HTML são geradas a partir de ficheiros pug.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="../arq-son-EVO/views/layout.pug">Layout de todas as páginas (PUG)</deliverable>
+        <deliverable path="../arq-son-EVO/views/index.pug">Página inicial da aplicação (PUG)</deliverable>
+        <deliverable path="../arq-son-EVO/views/form.pug">Página usada para adicionar uma musica (PUG)</deliverable>
+        <deliverable path="../arq-son-EVO/views/error.pug">Página de erro (PUG)</deliverable>
+        <deliverable path="../arq-son-EVO/views/cancao.pug">Página usada para visualizar uma arquivo sonoro (PUG)</deliverable>
+        <deliverable path="../arq-son-EVO/views/editar.pug">Página usada para editar uma arquivo sonoro (PUG)</deliverable>
+        <deliverable path="../arq-son-EVO/routes/index.js">Roteador da aplicação (JS) </deliverable>
+        <deliverable path="../arq-son-EVO/cancoes.json">Base de dados para o arquivo (JSON) </deliverable>
+        
+    </deliverables>
+</pr>
