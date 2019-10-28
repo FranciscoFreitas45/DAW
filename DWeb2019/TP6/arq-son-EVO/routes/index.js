@@ -116,13 +116,10 @@ router.post('/editar:id', function(req, res) {
 
 router.delete('/:id',function(req,res){
 var id = req.params.id
-console.log("CHEGO AQUI")
 jsonfile.readFile(myBD, (erro, cancoes)=>{
     if(!erro){
-        console.log("CHEGO AQUI")
         var index = cancoes.findIndex(a => a.id==id )
         if(index > -1){
-            console.log("CHEGO AQUI2 ")
             cancoes.splice(index, 1)
             jsonfile.writeFile(myBD, cancoes, erro =>{
                 if(erro) console.log(erro)
