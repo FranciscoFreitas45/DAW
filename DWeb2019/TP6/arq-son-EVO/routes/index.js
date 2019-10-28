@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var jsonfile = require('jsonfile')
+var nanoid = require('nanoid')
 
 var myBD = __dirname + "/../cancoes.json"
 console.log(myBD)
@@ -65,7 +66,20 @@ router.get('/editar:id', function(req, res, next) {
 router.post('/', function(req, res) {
   jsonfile.readFile(myBD, (erro, cancoes)=>{
     if(!erro){
-      cancoes.push(req.body)
+      var obj = {
+        prov: req.body.prov,
+        local: req.body.local,
+        tit: req.body.tit,
+        musico: req.body.musico,
+        file: {
+          t: req.body.file,
+          text: ""
+        },
+        duracao: req.body.duracao,
+    
+      };
+      obj.id= nanoid()
+      cancoes.push(obj)
       jsonfile.writeFile(myBD, cancoes, erro => {
         if(erro) console.log(erro)
         else console.log('Registo gravado com sucesso.')
