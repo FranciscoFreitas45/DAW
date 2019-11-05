@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-orange
+                h3 Atualizar Filme
+            .w3-container
+                input.w3-input.w3-border.w3-section.w3-light-grey(id="title" type="text" name="title" value=film.title)
+                input.w3-input.w3-border.w3-section.w3-light-grey(id="year" type="text" name="year" value=film.year)
+                h2 Elenco
+                each ator in film.cast
+                    input.w3-input.w3-border.w3-section.w3-light-grey(id="ator" type="text" name="cast[]" value=ator class ="ator")
+                h2 Género
+                each genero in film.genres
+                    input.w3-input.w3-border.w3-section.w3-light-grey(id="genres" type="text" name="genres[]" value=genero class="genres")
+
+                        
+                button.w3-btn.w3-border.w3-margin-bottom.w3-right.w3-orange(onclick="atualizar('" + film._id + "')") Atualizar
+
+        .w3-container.w3-orange
+            footer.w3-container
+                p
+                    a(href="/") Voltar à página principal
