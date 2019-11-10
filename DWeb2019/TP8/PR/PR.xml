@@ -2,11 +2,11 @@
 <!DOCTYPE pr SYSTEM "PR.dtd">
 <pr>
     <metadata>
-        <keyname>TPC7</keyname>
-        <title>Servidor NodeJS para Arquivo de Filmes</title>
+        <keyname>TPC8</keyname>
+        <title>Servidor NodeJS : API + Interface</title>
         <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho </supervisor>
-        <bdate>29/10/2019</bdate>
-        <edate>5/11/2019</edate>
+        <bdate>5/11/2019</bdate>
+        <edate>12/11/2019</edate>
         
     </metadata>
     <workteam>
@@ -19,21 +19,29 @@
         
     </workteam>
     <abstract>
-        <p> Este trabalho consiste na construção de um servidor que suporta CRUD, direcionado a uma base de dados de filmes. </p>
-        <p> Para tal utilizamos um ficheiro .json para ser a base da nossa base de dados em Mongo. Esse de dados está em:  <xref url="../movies.json"> movies.json</xref> .</p>
-        <p> Este ficheiro foi carregado para a base de dados em Mongo.</p>
+        <p> Este trabalho consiste na realização de dois exercícios que abordam o tema indicado   </p>
+        <p>  No primeiro exercicio era pedido para fazer a  a conversão do <i>dataset</i> disponibilizado em 
+            <xref url="http://www4.di.uminho.pt/~jcr/AULAS/didac/RepFichas/site/fichas/dweb2019-e2.html">página</xref> para um formato arbitrário.
+            Foi utilizado o formato <i>JSON</i> para armazenar essa mesma informação. 
+            Este ficheiro foi posteriormente importado para o <i>MongoDB</i> (através do comando <i>mongoimport</i>)
+        </p>
+        <p>
+            O segundo exercício consistia na criação de um servidor que permitia gerir a base de dados em causa e, ainda, suportar uma determinada <i>API</i> de dados. 
+            Nesta última contemplam-se vários pedidos <i>GET</i> sobre a informação presente na base de dados, nomeadamente a lista de todos os prémios <i>Nobel</i>, os dados relativos a um determinado prémio <i>Nobel</i> ou ainda a lista das categorias dos mesmos. 
+            Como extra foi também implementada <i>interface Web sobre este servidor</i>
+        </p>
     </abstract>
     <deliverables>
         <deliverable path="PR.xsl">PR(XSL) </deliverable>
         <deliverable path="PR.xml">PR(XML)</deliverable>
-        <deliverable path="PR.html">PR(HTML)</deliverable>
+        <deliverable path="pr.html">PR(HTML)</deliverable>
         <deliverable path="PR.dtd">PR(DTD)</deliverable>
-        <deliverable path="../Filmes/views/layout.pug">Layout de todas as páginas (PUG)</deliverable>
-        <deliverable path="../Filmes/views/index.pug">Página inicial da aplicação (PUG)</deliverable>
-        <deliverable path="../Filmes/views/add.pug">Página usada para adicionar um filme (PUG)</deliverable>
-        <deliverable path="../Filmes/views/error.pug">Página de erro (PUG)</deliverable>
-        <deliverable path="../Filmes/views/film.pug">Página usada para visualizar um filme (PUG)</deliverable>
-        <deliverable path="../Filmes/views/update.pug">Página usada para editar um filme(PUG)</deliverable>
-        <deliverable path="../Filmes/routes/filmes.js">Roteador da aplicação (JS) </deliverable>
+        
+        <deliverable path="../prize.json">Ficheiro JSON correspondente à base de dados mencionada acima </deliverable>
+        <deliverable path="../PremioNobel/routes/api.js">Roteador da API (JS) </deliverable>
+        <deliverable path="../PremioNobel/routes/premio.js">Roteador da Interface (JS) </deliverable>
+        <deliverable path="../PremioNobel/routes/index.js">Roteador da Pagina Principal (JS) </deliverable>
+        <deliverable path="../PremioNobel/models/prizes.js">Models (JS) </deliverable>
+        <deliverable path="../PremioNobel/controllers/prizes.js">Controllers (JS) </deliverable>
     </deliverables>
 </pr>
