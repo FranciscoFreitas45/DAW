@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Lista de Prémios Nobel
+    table.w3-table-all
+        tr
+            th Ano
+            th Categoria
+        each premio in lista
+            tr
+                td= premio.year
+                td= premio.category
+               
+    adress
+        a(href="http://localhost:4545/") HomePage

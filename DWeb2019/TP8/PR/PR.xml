@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "PR.dtd">
+<pr>
+    <metadata>
+        <keyname>TPC7</keyname>
+        <title>Servidor NodeJS para Arquivo de Filmes</title>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho </supervisor>
+        <bdate>29/10/2019</bdate>
+        <edate>5/11/2019</edate>
+        
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81580</identifier>
+            <name>Francisco Freitas</name>
+            <email>a81580@alunos.uminho.pt</email>
+            <git>https://github.com/FranciscoFreitas45</git>
+        </worker>
+        
+    </workteam>
+    <abstract>
+        <p> Este trabalho consiste na construção de um servidor que suporta CRUD, direcionado a uma base de dados de filmes. </p>
+        <p> Para tal utilizamos um ficheiro .json para ser a base da nossa base de dados em Mongo. Esse de dados está em:  <xref url="../movies.json"> movies.json</xref> .</p>
+        <p> Este ficheiro foi carregado para a base de dados em Mongo.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xsl">PR(XSL) </deliverable>
+        <deliverable path="PR.xml">PR(XML)</deliverable>
+        <deliverable path="PR.html">PR(HTML)</deliverable>
+        <deliverable path="PR.dtd">PR(DTD)</deliverable>
+        <deliverable path="../Filmes/views/layout.pug">Layout de todas as páginas (PUG)</deliverable>
+        <deliverable path="../Filmes/views/index.pug">Página inicial da aplicação (PUG)</deliverable>
+        <deliverable path="../Filmes/views/add.pug">Página usada para adicionar um filme (PUG)</deliverable>
+        <deliverable path="../Filmes/views/error.pug">Página de erro (PUG)</deliverable>
+        <deliverable path="../Filmes/views/film.pug">Página usada para visualizar um filme (PUG)</deliverable>
+        <deliverable path="../Filmes/views/update.pug">Página usada para editar um filme(PUG)</deliverable>
+        <deliverable path="../Filmes/routes/filmes.js">Roteador da aplicação (JS) </deliverable>
+    </deliverables>
+</pr>

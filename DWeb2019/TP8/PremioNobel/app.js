@@ -9,7 +9,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/Nobel', {useNewUrlParser: true ,useU
     .catch(()=> console.log('erro'))  
 
 var indexRouter = require('./routes/index');
-var prizesRouter = require('./routes/prizes');
+var prizesRouter = require('./routes/premios');
 var apiRouter = require('./routes/api');
 
 var app = express();
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api',apiRouter);
 app.use('/', indexRouter);
-app.use('/prizes', prizesRouter);
+app.use('/premios', prizesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

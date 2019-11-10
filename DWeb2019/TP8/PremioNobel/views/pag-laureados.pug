@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Laureados
+    table.w3-table-all
+        tr
+            th Identificador
+            th Nome
+            th Apelido
+            th Ano
+            th Categoria
+        each l in lista
+            tr
+                td= l._id
+                td= l.firstname
+                td= l.surname
+                each p in l.premio    
+                    td=p.ano
+                    td=p.categoria
+               
+    adress
+        a(href="http://localhost:4545/") HomePage

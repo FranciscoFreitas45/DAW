@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .w3-container
+    h1 Premios Nobel
+    ul.w3-ul
+      li
+        a(href="http://localhost:4545/premios") Lista de prémios apenas com os campos "year" e "category"
+      li
+        a(href="http://localhost:4545/premios/categorias")  Devolve a lista de categorias, sem repetições
+      li
+        a(href="http://localhost:4545/premios/laureados")  Devolve a lista ordenada alfabeticamente dos Laureados
+        

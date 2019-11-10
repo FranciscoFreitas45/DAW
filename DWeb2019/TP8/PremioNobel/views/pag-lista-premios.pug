@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Lista de Prémios Nobel
+    table.w3-table-all
+        tr
+            th Ano
+            th Categoria
+            th Motivação
+        
+        each premio in lista
+            tr
+            td=premio.year
+            td=premio.category
+            td=premio.overallMotivation     
+            th Laureados
+                    table.w3-table-all
+                        tr 
+                            th Id
+                            th Firstname
+                            th Surname
+                            th Motivação
+                            th Share
+                        each l in premio.laureates
+                            tr
+                                td=l.id
+                                td=l.firstname
+                                td=l.surname
+                                td=l.motivation
+                                td=l.share        
+    adress
+        a(href="http://localhost:4545/") HomePage
