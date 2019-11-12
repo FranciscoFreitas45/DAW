@@ -1,0 +1,53 @@
+extends layout
+block content
+  .w3-container
+    h1=ent.designacao
+    table.w3-table-all
+        tr
+            th Estado
+            th Sigla
+            th Sioe
+            th Designação
+            th Internacional
+        tr
+            td=ent.estado
+            td=ent.sigla
+            td=ent.sioe
+            td=ent.designacao
+            td=ent.internacional
+    h2 Tipologias        
+    table.w3-table-all
+        tr
+            th Sigla
+            th Designação
+            th Identificação
+            each e in ent.tipologias
+                tr
+                    td= e.sigla
+                    td= e.designacao
+                    td=e.id
+    h2 Dono
+    table.w3-table-all
+        tr 
+            th Codigo
+            th Titulo
+            each e in ent.dono
+                tr
+                    td= e.codigo
+                    td= e.titulo
+
+    h2 Participante
+    table.w3-table-all
+        tr 
+            th Codigo
+            th Titulo
+            each e in ent.participante
+                tr
+                    td= e.codigo
+                    td= e.titulo                     
+
+
+    a(href='/') 
+        button Voltar para tras.  
+        
+
