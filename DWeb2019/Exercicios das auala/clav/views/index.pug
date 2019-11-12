@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Lista de Entidades
+    table.w3-table-all
+        tr
+            th Estado
+            th Sigla
+            th Sioe
+            th Designação
+            th Idenficacao
+            th Internacional
+            th Operações
+        
+        each entidade in lista
+            tr
+            td=entidade.estado
+            td=entidade.sigla
+            td=entidade.sioe
+            td=entidade.designacao
+            td=entidade.id
+            td=entidade.internacional
+            td  
+              a(href='/'+entidade.id)
+                button.w3-button.w3-circle.w3-blue-grey Consultar
+
