@@ -1,0 +1,14 @@
+{
+  "name": "mongoimport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mongoImport.js",
+  "scripts": {
+    "test": "node mongoImport"
+  },
+  "author": "Francisco Freitas",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.7.11"
+  }
+}
