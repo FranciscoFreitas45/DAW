@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "PR.dtd">
+<pr>
+    <metadata>
+        <keyname>TPC9</keyname>
+        <title>MongoImport</title>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho </supervisor>
+        <bdate>12/11/2019</bdate>
+        <edate>19/11/2019</edate>
+        
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81580</identifier>
+            <name>Francisco Freitas</name>
+            <email>a81580@alunos.uminho.pt</email>
+            <git>https://github.com/FranciscoFreitas45</git>
+        </worker>
+        
+    </workteam>
+    <abstract>
+        <p> Este trabalho consiste na criação de um executável com a mesma funcionalidade do comando mongoImport, ou seja, capaz de importar ficheiros JSON para o Mongo. </p>
+        <p> Para esse efeito foi criado um esquema vazio com uma estrutura flexivel e a partir dele é criado um modelo com o nome da coleção.   </p>
+        <p> O modelo é utilizado para guardar os dados obtidos a partir da leitura de um ficheiro JSON  </p>
+        <p> Para execuctar o executavel:</p>
+        <p> <b> node mongoImport.js Nome_Da_BD   Nome_da_Coleção    Nome_do_Ficheiro    </b>   </p>
+       
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xsl">PR(XSL) </deliverable>
+        <deliverable path="PR.xml">PR(XML)</deliverable>
+        <deliverable path="pr.html">PR(HTML)</deliverable>
+        <deliverable path="PR.dtd">PR(DTD)</deliverable>
+        <deliverable path="../mongoImport.js">Ficheiro com o código fonte </deliverable>
+    </deliverables>
+</pr>
