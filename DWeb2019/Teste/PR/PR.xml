@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "PR.dtd">
+<pr>
+    <metadata>
+        <keyname>Teste</keyname>
+        <title>Teste de DAW</title>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho </supervisor>
+        <bdate>16/01/2020</bdate>
+        <edate>16/01/2020</edate>
+        
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81580</identifier>
+            <name>Francisco Freitas</name>
+            <email>a81580@alunos.uminho.pt</email>
+            <git>https://github.com/FranciscoFreitas45</git>
+        </worker>
+        
+    </workteam>
+    <abstract>
+       <p>Este teste consistia em 2 exercios.</p>
+        <p>O primeiro exercicio consistia em desenvolver uma Api de dados.Para isso foi utilizado um conversor online para fazer o parser de XML para Json.</p>
+        <p>Foi utilizado a base de dados MongoDB para a persistencia dos dados</p>
+        <p>Depois de uma análise ao json gerado foi construido um model e o controller </p>
+        <p>O servidor está á escuta na porta 3000.</p>
+        
+        <p>Já o segundo exercicio consistia na construção de uma interface usando os dados presentes no ClaV</p>
+        <p>Tambem este servidor está à escuta na porta 3000</p>
+    
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xsl">PR(XSL) </deliverable>
+        <deliverable path="PR.xml">PR(XML)</deliverable>
+        <deliverable path="pr.html">PR(HTML)</deliverable>
+        <deliverable path="PR.dtd">PR(DTD)</deliverable>
+        <deliverable path="../Clav/routes/index.js">Roteaador para o ex2 </deliverable>
+        <deliverable path="../Musica/models/musica.js">Models (JS) para o ex1 </deliverable>
+        <deliverable path="../Musica/controllers/musicas.js">Controllers (JS) </deliverable>
+        <deliverable path="../Musica/routes/api.js">Roteaador para o ex1 </deliverable>
+ 
+    </deliverables>
+</pr>

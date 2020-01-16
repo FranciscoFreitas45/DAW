@@ -1,0 +1,61 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3= lista.designacao
+            table.w3-table-all
+                tr
+                    th Sigla
+                        td= lista.sigla
+                tr
+                    th Designacao
+                        td= lista.designacao
+                tr
+                    th Estado
+                        td= lista.estado
+                tr
+                    th Internacional
+                        td= lista.internacional         
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 Tipologias:
+            table.w3-table-all
+                tr
+                    th Identificador
+                    th Sigla
+                    th Designação
+                    each e in lista.tipologias
+                        tr
+                            td
+                                a(href='http://localhost:3000/tipologia/' + e.id)= e.id
+                            td= e.sigla
+                            td= e.designacao
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 É proprietário dos processos:
+            table.w3-table-all
+                tr
+                    th Código
+                    th Título
+                each p in lista.dono
+                    tr
+                        td
+                            a(href='http://clav.dglab.gov.pt/classes/consultar/c' + p.codigo)=p.codigo
+                        td= p.titulo
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 Participa nos Processos:
+            table.w3-table-all
+                tr
+                    th Código
+                    th Título
+                    th Tipo de Paricipante
+                each pr in lista.participante
+                    tr
+                        td= pr.codigo
+                        td= pr.titulo
+                        td= pr.tipoPar
+
+    button.w3-button.w3-green.w3-margin(onclick="history.go(-1)") Voltar
