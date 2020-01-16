@@ -23,6 +23,8 @@
         <p>O primeiro exercicio consistia em desenvolver uma Api de dados.Para isso foi utilizado um conversor online para fazer o parser de XML para Json.</p>
         <p>Foi utilizado a base de dados MongoDB para a persistencia dos dados</p>
         <p>Depois de uma análise ao json gerado foi construido um model e o controller </p>
+        <p> Para colocar a app a correr basta fazer import para o MongoDB do ficheiro json da seguinte forma: </p>
+        <p> mongoimport --db Musicas --collection musicas --file arquivo-musica-digital..json --jsonArray</p>
         <p>O servidor está á escuta na porta 3000.</p>
         
         <p>Já o segundo exercicio consistia na construção de uma interface usando os dados presentes no ClaV</p>
